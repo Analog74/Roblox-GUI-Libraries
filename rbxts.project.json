@@ -1,0 +1,13 @@
+{
+  "$schema": "https://roblox-ts.com/schemas/project.json",
+  "name": "GuiLibrariesTS",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "TS": {
+        "$path": "src/ReplicatedStorage/TS"
+      }
+    }
+  }
+}
