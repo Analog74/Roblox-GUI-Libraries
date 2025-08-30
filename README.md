@@ -44,7 +44,7 @@ This project aggregates multiple Roblox UI and framework libraries (Wally + cura
 | Cmdr | Command console | Wally: `evaera/cmdr@^1.9.0` | Added (wally server-dependency) |
 | Wally | Package manager | Tool | Installed locally |
 | Rojo | Sync tool | Tool | Installed locally |
-| roblox-ts | TypeScript to Luau | Tool | Installed globally |
+<!-- roblox-ts tool removed from active toolchain -->
 
 ## Usage (Argon)
 1. Install dependencies
@@ -122,14 +122,7 @@ Former TS token generation script deprecated; Lua tokens are source of truth.
 ## Argon Ignore
 `.argonignore` excludes `vendor/` and markdown files to reduce sync overhead.
 
-## TypeScript (roblox-ts)
-To add TS support later:
-```sh
-npm init -y
-npm install --save-dev roblox-ts @rbxts/types
-npx rbxtsc --init
-```
-Emit compiled TS to a folder Argon maps (e.g., `out/`); add that path in Argon config if needed.
+<!-- TypeScript reintroduction instructions removed (see CONTRIBUTING history if needed). -->
 
 ## License
 Each third-party library retains its original license. This meta-project is private.

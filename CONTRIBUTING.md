@@ -31,9 +31,7 @@
 - Keep micro-bench loops small (≤100 iterations) to prevent frame hitching.
 - Label with `debug.profilebegin/end`.
 
-## TypeScript
-- Place TS sources under `rbxts/src`; compiled output goes to `src/ReplicatedStorage/TS`.
-- Do not edit compiled Lua.
+<!-- TypeScript section removed -->
 
 ## Commit Message Hints
 `feat(panel): add Fusion form panel`
