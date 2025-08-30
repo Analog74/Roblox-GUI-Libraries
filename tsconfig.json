@@ -1,0 +1,19 @@
+{
+  "include": ["src-ts"],
+  "compilerOptions": {
+  "types": ["@rbxts/types"],
+  "typeRoots": ["node_modules/@rbxts"],
+  "module": "commonjs",
+  "target": "es2015",
+  "rootDir": "src-ts",
+  "outDir": "src/ReplicatedStorage/TS",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "declaration": false,
+    "skipLibCheck": true,
+    "strict": true,
+  "noLib": true,
+  "moduleDetection": "force"
+  }
+}

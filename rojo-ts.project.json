@@ -1,0 +1,15 @@
+{
+  "name": "GuiLibrariesTS",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "TS": {
+        "$path": "src/ReplicatedStorage/TS"
+      },
+      "TS_Source": {
+        "$path": "src-ts"
+      }
+    }
+  }
+}

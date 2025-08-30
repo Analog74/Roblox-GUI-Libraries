@@ -1,0 +1,17 @@
+{
+  "name": "DesignStorybook",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "DesignSystem": { "$path": "src/ReplicatedStorage/DesignSystem" }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "StorybookLoader": { "$path": "src/StarterPlayer/StarterPlayerScripts/StorybookLoader.client.lua" }
+      }
+    }
+  }
+}

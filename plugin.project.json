@@ -1,0 +1,10 @@
+{
+  "name": "DesignPlugin",
+  "tree": {
+    "$className": "DataModel",
+    "ServerStorage": {
+      "$className": "ServerStorage",
+      "DesignPlugin": { "$path": "plugin" }
+    }
+  }
+}

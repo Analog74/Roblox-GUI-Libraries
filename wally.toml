@@ -1,0 +1,15 @@
+[package]
+name = "analog74/guilibraries"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+private = true
+
+[dependencies]
+Fusion = "elttob/fusion@^0.3.0"
+Roact = "roblox/roact@^1.4.4"
+Aegis = "lumin/aegis@^0.1.0"
+Knit = "sleitnick/knit@^1.7.0"
+
+[server-dependencies]
+Cmdr = "evaera/cmdr@^1.12.0"

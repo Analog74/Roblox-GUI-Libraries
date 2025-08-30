@@ -1,0 +1,19 @@
+{
+  "name": "guilibraries-ts",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+  "prebuild": "node scripts/check-rbxts-types.cjs && node scripts/gen-ts-theme.cjs",
+  "build": "rbxtsc --rojo rojo-ts.project.json",
+  "watch": "rbxtsc --rojo rojo-ts.project.json -w",
+  "build:ts": "cd ts-project && rbxtsc && rsync -a out/ ../src/ReplicatedStorage/TS/",
+  "gen-notice": "node scripts/gen-notice.cjs",
+    "verify": "node scripts/check-rbxts-types.cjs",
+    "gen-theme": "node scripts/gen-ts-theme.cjs"
+  },
+  "devDependencies": {
+    "@rbxts/types": "^1.0.0",
+    "roblox-ts": "^2.3.0"
+  }
+}
