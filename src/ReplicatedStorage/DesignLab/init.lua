@@ -15,13 +15,6 @@ local RexPanel = require(script.Demos.RexPanel)
 local BenchmarkPanel = require(script.Demos.BenchmarkPanel)
 local StudioComponentsPanel = require(script.Demos.StudioComponentsPanel)
 
--- Optional TS panel
-local TsPanelModule do
-	local ok, mod = pcall(function()
-		return require(ReplicatedStorage:FindFirstChild("TS") and ReplicatedStorage.TS:FindFirstChild("DesignLabTsPanel"))
-	end)
-	if ok and type(mod) == "function" then TsPanelModule = mod end
-end
 
 -- Register panels (idempotent)
 Registry.register("Fusion", FusionPanel, {category="framework"})
@@ -32,9 +25,6 @@ Registry.register("Aegis", AegisPanel, {category="framework"})
 Registry.register("Rex", RexPanel, {category="framework"})
 Registry.register("Bench", BenchmarkPanel, {category="metrics"})
 Registry.register("StudioComponents", StudioComponentsPanel, {category="framework", tags={"placeholder"}})
-if TsPanelModule then
-	Registry.register("TypeScript", TsPanelModule, {category="framework", tags={"ts"}})
-end
 
 local DesignLab = {}
 

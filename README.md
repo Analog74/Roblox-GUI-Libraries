@@ -81,18 +81,8 @@ Adjust the script to refine or reduce copied modules as the design lab evolves.
 - Demo panels for Fusion, Roact, Aegis, Rex, Benchmark, StudioComponents (placeholder)
 - Bootstrap `init.lua` and a server loader script to mount panels in each player's `PlayerGui` for rapid comparison.
 
-### TypeScript (roblox-ts) Integration
-Added optional roblox-ts toolchain:
-- `package.json`, `tsconfig.json`
-- Source in `rbxts/src`, compiled output to `src/ReplicatedStorage/TS`
-- Sample `DesignLabTsPanel.ts` auto-detected by DesignLab (loaded if built)
-
-Build steps:
-1. Install Node deps: `npm install`
-2. Compile once: `npm run build` (or watch: `npm run watch`)
-3. Run Argon; the compiled Lua module appears under `ReplicatedStorage/TS/DesignLabTsPanel`.
-
-If the TypeScript panel isn't visible, ensure you've built and Argon has synced the `src/` tree.
+### (Removed) TypeScript Integration
+The experimental roblox-ts pipeline was removed to reduce complexity. Reintroduce later with a clean `rbxts/` layout if needed.
 
 ## Advanced DesignLab Architecture
 New modules added:
@@ -126,8 +116,8 @@ Use the template in `PluginLab/PluginEntryTemplate.lua` inside a real plugin con
 
 Extend by adding new demo modules in `DesignLab/Demos` following existing patterns.
 
-### TypeScript Theme Tokens Generation
-Run `npm run gen-theme` to emit a `rbxts/src/ThemeTokens.generated.ts` file mirroring the current dark variant tokens for TS-side consumption (manual sync for now; update the generator as variants evolve).
+### Theme Tokens Generation (Removed)
+Former TS token generation script deprecated; Lua tokens are source of truth.
 
 ## Argon Ignore
 `.argonignore` excludes `vendor/` and markdown files to reduce sync overhead.
