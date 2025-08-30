@@ -5,8 +5,8 @@
   "license": "UNLICENSED",
   "scripts": {
   "prebuild": "node scripts/check-rbxts-types.cjs && node scripts/gen-ts-theme.cjs",
-  "build": "rbxtsc --rojo rojo-ts.project.json",
-  "watch": "rbxtsc --rojo rojo-ts.project.json -w",
+  "build": "rbxtsc",
+  "watch": "rbxtsc -w",
   "build:ts": "cd ts-project && rbxtsc && rsync -a out/ ../src/ReplicatedStorage/TS/",
   "gen-notice": "node scripts/gen-notice.cjs",
     "verify": "node scripts/check-rbxts-types.cjs",
