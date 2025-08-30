@@ -9,6 +9,9 @@
       },
       "TS_Source": {
         "$path": "src-ts"
+      },
+      "TS_Include": {
+        "$path": "include"
       }
     }
   }
