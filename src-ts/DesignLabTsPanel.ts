@@ -12,7 +12,7 @@ const Theme = {
 	},
 };
 
-const mount = (parent: Instance) => {
+function mount(parent: Instance) {
 	const frame = new Instance("Frame");
 	frame.Name = "TsPanel";
 	frame.Size = new UDim2(0,260,0,160);
@@ -49,6 +49,6 @@ const mount = (parent: Instance) => {
 		if (acc >= 1) { acc = 0; count++; body.Text = `Compiled via roblox-ts. Counter: ${count}`; }
 	});
 	return frame;
-};
+}
 
-export = mount;
+export default mount;
