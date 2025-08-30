@@ -13,6 +13,7 @@
     "declaration": false,
     "skipLibCheck": true,
     "strict": true,
-    "moduleDetection": "force"
+  "moduleDetection": "force",
+  "noLib": true
   }
 }
